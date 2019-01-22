@@ -1,0 +1,20 @@
+<!--The first page shows people a form where they can add a new message (title + body): nav bar-->
+<% include ./partials/header%>
+<% include ./partials/navbar%>
+<div class="container row">
+    <div class="fillin">
+        <form action="/form" method="post">
+                <label style="font-size: 25px;">Title of your message: </label>
+                <input type="text" name="title"/>
+                <br>
+                <br>
+                <label style="font-size: 50px;">Message: </label><br>
+                <input type="text" name="body" size="200px"/>
+                <br>
+                <br>
+            
+                <input style="color:blue" class="submission" type="submit" value="send through"/>
+        </form>
+    </div>
+</div>
+<% include ./partials/footer%>

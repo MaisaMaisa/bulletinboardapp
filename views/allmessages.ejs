@@ -1,0 +1,31 @@
+<% include ./partials/header%>
+<div class="container row">
+    <h1 id= "yoo">Here are all the messages:</h1>
+        <ul>
+        <%if (content.length > 0) { %>
+        <% for(let input of content) { %>
+        <div>
+        <h4>Matter:
+            <%=input.title%>
+        </h4>
+        
+        <h3>Message:
+            <p style="color:blue">
+            <%=input.body%>
+            </p>
+        </h3>    
+        </div>
+        <br><br>
+     
+        <% } %>
+        <% } %>
+     
+        <%if (content.length == 0) { %>
+        <p>
+            Emptiness
+        </p>
+        <% } %>
+     </ul>
+    
+<% include ./partials/footer%>
+<% include ./partials/navbar%>

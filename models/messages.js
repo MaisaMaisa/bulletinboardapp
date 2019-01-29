@@ -5,8 +5,7 @@ const Sequelize = require('sequelize');
 const allmessages =  new Sequelize('bulletinboard', process.env.POSTGRES_USER, process.env.POSTGRES_PASSWORD, {
     host: 'localhost',
     dialect: 'postgres',
-    operatorsAliases: false,
-    password: 'not123456789'
+    operatorsAliases: false
 });
 
 //check if connected
